@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Apple Magazine</title>
+    <link rel="stylesheet" href="BlackApple.css">
+    <script src="BlackApple.js" defer></script>
+    <style>
+        /* CSS Inline Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .navigation a:hover {
+    color: #f39c12;
+}
+
+/* Featured Section */
+.featured {
+    background: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.featured-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.featured-item {
+    flex: 1 1 calc(50% - 1.5rem);
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured-item img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-item h3 {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.featured-item p {
+    padding: 0 1rem 1rem;
+    color: #555;
+}
+
+/* Latest Updates */
+.latest {
+    background: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.latest h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.latest-grid article {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.latest-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.latest-grid h4 {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.latest-grid h4 a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+.latest-grid h4 a:hover {
+    color: #f39c12;
+}
+
+/* Video Highlights */
+.videos {
+    background: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.videos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.video-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-grid iframe {
+    flex: 1 1 48%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+    </style>
+    <script>
+        /* Javascript Inline Code */
+        document.addEventListener('DOMContentLoaded', () => {
+    console.log("Black Apple Magazine is loaded!");
+});
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Black Apple Magazine</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Breaking News</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Opinion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured Section -->
+        <section class="featured">
+            <h2>Top Stories</h2>
+            <div class="featured-grid">
+                <article class="featured-item">
+                    <img src="https://via.placeholder.com/500x300" alt="Top Story">
+                    <h3><a href="#">Exclusive: Celebrity Caught in Controversy</a></h3>
+                    <p>Details emerge about the latest scandal involving a major star.</p>
+                </article>
+                <article class="featured-item">
+                    <img src="https://via.placeholder.com/500x300" alt="Top Story">
+                    <h3><a href="#">Breaking: Protesters Take to the Streets</a></h3>
+                    <p>Thousands rally for social justice in downtown areas nationwide.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Latest Updates -->
+        <section class="latest">
+            <h2>Latest Updates</h2>
+            <div class="latest-grid">
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="Update">
+                    <h4><a href="#">Rising Star Speaks Out on Industry Challenges</a></h4>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="Update">
+                    <h4><a href="#">Local Spotlight: Entrepreneurs Changing the Game</a></h4>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="Update">
+                    <h4><a href="#">Exploring African Art in a Modern Context</a></h4>
+                </article>
+                <article>
+                    <img src="https://via.placeholder.com/300x200" alt="Update">
+                    <h4><a href="#">Report: Crime Rates Drop After New Policy</a></h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Video Highlights -->
+        <section class="videos">
+            <h2>Video Highlights</h2>
+            <div class="video-grid">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Highlight Video" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Highlight Video" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Black Apple Magazine. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

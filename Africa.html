@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    background-color: #B22222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header .nav-links {
+    display: flex;
+    list-style: none;
+}
+header .nav-links li {
+    margin: 0 1rem;
+}
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+header .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    padding: 1rem 2rem;
+}
+.main-news {
+    flex: 3;
+    margin-right: 2rem;
+}
+.main-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.main-news h1 {
+    margin: 1rem 0 0.5rem;
+    color: #B22222;
+}
+.main-news p {
+    margin-bottom: 1rem;
+}
+.main-news .read-more {
+    color: #B22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+    background-color: #B22222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #B22222;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .nav-links.active {
+        display: flex;
+    }
+    header .menu-toggle {
+        display: block;
+    }
+    main {
+        flex-direction: column;
+    }
+    .main-news {
+        margin-right: 0;
+    }
+}
+    </style>
+    <script>
+        /* Javascript Inline Code */
+        // Toggle Mobile Menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+    </script>
+</head>
+<body>
+    <header><div class="header-main">
+        <div class="https://www.africanews.com">Africa News</div>
+        <div class="logo">
+            <img src="images/thewashpostred.png" alt=" Logo">
+        </div>
+       
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#africa">Africa</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="main-news">
+            <article>
+                <img src="headline.jpg" alt="Headline Image">
+                <h1>Headline News in Africa</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac lacus nec metus ullamcorper...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <h2>Trending News</h2>
+            <ul>
+                <li><a href="#">Topic 1: Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Topic 2: Proin ac lacus nec metus</a></li>
+                <li><a href="#">Topic 3: Sed volutpat ipsum ac purus</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2024 The Wash Post. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

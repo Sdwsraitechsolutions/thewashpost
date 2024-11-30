@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice for All</title>
+    <link rel="stylesheet" href="SocialJustice.css">
+    <script src="SocialJustice.js" defer></script>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+header .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header .navigation a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #f39c12, #e74c3c);
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .cta-button {
+    background-color: #fff;
+    color: #f39c12;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Issues Section */
+.issues {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.issues h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.issue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.issue-item {
+    background: #f4f4f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.issue-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.issue-item .read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.issue-item .read-more:hover {
+    text-decoration: underline;
+}
+
+/* News Section */
+.news {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.news-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.news-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-item p {
+    font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.cta .cta-button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta .cta-button:hover {
+    background-color: #e74c3c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+    </style>
+    <script>
+        /* Javascript Inline Code */
+        document.addEventListener('DOMContentLoaded', () => {
+    console.log("Social justice site is active and ready for engagement.");
+});
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="logo">
+                <img src="images/thewashpostred.png" alt=" Logo">
+            </div>
+            <h1>Justice for All</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Campaigns</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Empowering Voices, Driving Change</h2>
+            <p>Together, we can fight for equality, justice, and human rights for all.</p>
+            <a href="#" class="cta-button">Join the Movement</a>
+        </section>
+
+        <!-- Highlighted Issues -->
+        <section class="issues">
+            <h2>Our Focus</h2>
+            <div class="issue-grid">
+                <article class="issue-item">
+                    <h3>Racial Equality</h3>
+                    <p>Standing against systemic racism and promoting inclusivity.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </article>
+                <article class="issue-item">
+                    <h3>Criminal Justice Reform</h3>
+                    <p>Advocating for fair and equitable policies in the justice system.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </article>
+                <article class="issue-item">
+                    <h3>Gender Equality</h3>
+                    <p>Fighting for equal opportunities and rights for all genders.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="news">
+            <h2>Latest Updates</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <img src="https://via.placeholder.com/300x200" alt="News Image">
+                    <h3><a href="#">Breaking: Policy Reform Gains Momentum</a></h3>
+                    <p>New legislation is set to address long-standing injustices.</p>
+                </article>
+                <article class="news-item">
+                    <img src="https://via.placeholder.com/300x200" alt="News Image">
+                    <h3><a href="#">Community Spotlight: Grassroots Organizing</a></h3>
+                    <p>How local communities are mobilizing for change.</p>
+                </article>
+                <article class="news-item">
+                    <img src="https://via.placeholder.com/300x200" alt="News Image">
+                    <h3><a href="#">Global Action: Advocating for Refugees</a></h3>
+                    <p>Efforts to provide shelter and resources to displaced people.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Take Action</h2>
+            <p>Join our campaigns or support us with your contributions.</p>
+            <a href="#" class="cta-button">Get Involved</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Justice for All. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

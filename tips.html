@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Updates</title>
+    <link rel="stylesheet" href="Tips.css">
+    <script src="Tips.js" defer></script>
+    <style>
+        /* CSS Inline Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    color: #d1e7ff;
+}
+
+header .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Spotlight Section */
+.spotlight {
+    background-color: #f0f0f0;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.spotlight h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.spotlight-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.spotlight-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.spotlight-item h3 a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.spotlight-item h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Categories Section */
+.categories {
+    padding: 2rem 1rem;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+.category-item ul {
+    list-style: none;
+}
+
+.category-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+.category-item ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category-item ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+    </style>
+    <script>
+        /* Javascript Inline Code */
+        document.addEventListener('DOMContentLoaded', () => {
+    console.log("Tips & Updates loaded!");
+});
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Global Updates</h1>
+            <p>Your Daily Dose of Information</p>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Celebrities</a></li>
+                <li><a href="#">Crime</a></li>
+                <li><a href="#">Government</a></li>
+                <li><a href="#">Police</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Spotlight Section -->
+        <section class="spotlight">
+            <h2>Spotlight</h2>
+            <div class="spotlight-grid">
+                <article class="spotlight-item">
+                    <img src="https://via.placeholder.com/400x250" alt="World News">
+                    <h3><a href="#">Breaking: Global Protests Erupt Over Climate Crisis</a></h3>
+                    <p>Activists worldwide call for immediate action to combat climate change.</p>
+                </article>
+                <article class="spotlight-item">
+                    <img src="https://via.placeholder.com/400x250" alt="Celebrity News">
+                    <h3><a href="#">Celebrity Spotlight: Top Actor Gives Back to Community</a></h3>
+                    <p>Find out how your favorite star is making a difference.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <h2>Topics</h2>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <h3>World News</h3>
+                    <ul>
+                        <li><a href="#">Conflict in Eastern Europe Escalates</a></li>
+                        <li><a href="#">Major Breakthrough in Space Exploration</a></li>
+                        <li><a href="#">Economic Trends Affecting Global Markets</a></li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Local Clean-Up Efforts Make Waves</a></li>
+                        <li><a href="#">Youth Empowerment Programs Thriving</a></li>
+                        <li><a href="#">Upcoming Community Events You Can't Miss</a></li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h3>Celebrities</h3>
+                    <ul>
+                        <li><a href="#">Award-Winning Actor Announces New Project</a></li>
+                        <li><a href="#">Musician's Tour Raises Millions for Charity</a></li>
+                        <li><a href="#">Scandals and Triumphs in Hollywood</a></li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h3>Crime</h3>
+                    <ul>
+                        <li><a href="#">Police Bust Major Drug Operation</a></li>
+                        <li><a href="#">Cybercrime on the Rise: Protect Yourself</a></li>
+                        <li><a href="#">How Communities Are Fighting Back Against Violence</a></li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h3>Government</h3>
+                    <ul>
+                        <li><a href="#">New Policies Shake Up Healthcare</a></li>
+                        <li><a href="#">International Diplomacy Efforts Intensify</a></li>
+                        <li><a href="#">How Your Local Officials Are Taking Action</a></li>
+                    </ul>
+                </div>
+                <div class="category-item">
+                    <h3>Police</h3>
+                    <ul>
+                        <li><a href="#">Reforms in Policing Practices Announced</a></li>
+                        <li><a href="#">Stories of Officers Making a Positive Impact</a></li>
+                        <li><a href="#">Insights into Community-Police Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Global Updates. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

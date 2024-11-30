@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wash Post</title>
+    <link rel="stylesheet" href="wash_post.css">
+    <style>
+        /* CSS Inline Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+#hero .hero-content {
+    flex: 1;
+}
+
+#hero h2 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#hero .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* News Section */
+.news-section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.news-grid article {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-grid h3 {
+    font-size: 1.5rem;
+}
+
+.news-grid p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.category {
+    width: 18%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category li {
+    margin: 0.5rem 0;
+}
+
+.category a {
+    color: #333;
+    text-decoration: none;
+}
+
+.category a:hover {
+    color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: #f39c12;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>The Wash Post</h1>
+            <nav>
+                <ul>
+                    <li><a href="tips.html">TIp News</a></li>
+                    <li><a href="Africa.html">Africa</a></li>
+                    <li><a href="paper.html">Newspaper</a></li>
+                    <li><a href="Worldnews.html">SDWSRAI</a></li>
+                    <li><a href="Liberia.html">Black Apple</a></li>
+                    <li><a href="socialjustice.html">Social Justice</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--<li><a href="https://www.google.com/" target="_blank">Top News</a></li>-->
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Breaking News: Major World Event Unfolding</h2>
+                <p>Stay updated with the latest headlines and news stories from around the globe.</p>
+                <a href="#top-news" class="btn">Read More</a>
+            </div>
+            <img src="https://via.placeholder.com/1200x600" alt="Hero Image">
+        </section>
+
+        <!-- Top News Section -->
+        <section id="top-news" class="news-section">
+            <h2>Top News</h2>
+            <div class="news-grid">
+                <article>
+                    <h3>Headline 1: Major Event Shocks the World</h3>
+                    <p>A significant development in global affairs has just occurred. Click to learn more...</p>
+                </article>
+                <article>
+                    <h3>Headline 2: Economic Outlook for the Next Quarter</h3>
+                    <p>Experts predict significant changes in the stock market. Full story...</p>
+                </article>
+                <article>
+                    <h3>Headline 3: Political Leaders Meet for Summit</h3>
+                    <p>The world's most powerful leaders are gathering for a historic summit. Get the details...</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div id="politics" class="category">
+                <h2>Politics</h2>
+                <ul>
+                    <li><a href="#">Breaking Political News</a></li>
+                    <li><a href="#">Government Shutdowns Impact</a></li>
+                    <li><a href="#">Campaigns and Election Results</a></li>
+                </ul>
+            </div>
+
+            <div id="world" class="category">
+                <h2>World</h2>
+                <ul>
+                    <li><a href="#">Global Conflicts and Peace Talks</a></li>
+                    <li><a href="#">Cultural Shifts and Trends</a></li>
+                    <li><a href="#">Climate Change and Its Effects</a></li>
+                </ul>
+            </div>
+
+            <div id="entertainment" class="category">
+                <h2>Entertainment</h2>
+                <ul>
+                    <li><a href="#">Celebrity News and Gossip</a></li>
+                    <li><a href="#">New Movie Releases</a></li>
+                    <li><a href="#">Music, Art, and Culture</a></li>
+                </ul>
+            </div>
+
+            <div id="sports" class="category">
+                <h2>Sports</h2>
+                <ul>
+                    <li><a href="#">Live Sports Scores</a></li>
+                    <li><a href="#">Upcoming Matches and Events</a></li>
+                    <li><a href="#">Athlete Spotlights</a></li>
+                </ul>
+            </div>
+
+            <div id="community" class="category">
+                <h2>Community</h2>
+                <ul>
+                    <li><a href="#">Local News and Events</a></li>
+                    <li><a href="#">Community Initiatives</a></li>
+                    <li><a href="#">Volunteer Opportunities</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Featured Articles Section -->
+        <section id="featured-articles">
+            <h2>Featured Articles</h2>
+            <div class="article-grid">
+                <article>
+                    <h3>Article 1: Deep Dive into Global Economics</h3>
+                    <p>An in-depth analysis of how global markets are affecting everyday life.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <h3>Article 2: Innovations Changing the World</h3>
+                    <p>Tech leaders reveal the latest developments in AI and automation.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <h3>Article 3: Inside the Latest Political Scandal</h3>
+                    <p>A closer look at the unfolding scandal involving political elites.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section id="subscribe">
+            <h2>Stay Updated with Our Newsletter</h2>
+            <p>Get the latest news delivered directly to your inbox.</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Wash Post. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
